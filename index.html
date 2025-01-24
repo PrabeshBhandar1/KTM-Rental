@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KTM Rentals - Home</title>
+
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#home"> <img src="logo1.png" alt="KTM Rentals"></a>
+      </div>
+      <nav>
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i> <!-- Default bars icon -->
+        </div>
+        <ul id="menuList">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#listings">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#find-us">Find Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Find Your Perfect <span class="auto-type"></span>in Kathmandu Valley</h2>
+      <form action="#contact" method="GET">
+        <!-- <input type="text" placeholder="Enter Location (e.g., Kathmandu, Bhaktapur)" required>
+        <input type="number" placeholder="Min Price" required>
+        <input type="number" placeholder="Max Price" required>
+        <button type="submit">Search</button> -->
+        <button><b>Click here to contact</b></button>
+      </form>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+
+      var typed = new Typed('.auto-type', {
+        strings: ['Houses', 'Apartments', 'Rooms'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+      });
+    </script>
+  </section>
+
+  <!-- Listings Section -->
+  <section id="listings" class="listings">
+    <div class="container">
+      <h2>Our Services</h2>
+      <p>
+        <b> KTM Rentals</b> simplifies your search for the <b>perfect room</b>, <b>apartment</b>, or <b>house
+        </b>for rent in Kathmandu Valley.
+        With verified listings, detailed property information, and personalized support, we make it easy for you to find
+        a space that truly feels like <b>home</b>.
+        Trust us to handle the details while you focus on what matters most.
+
+      </p>
+      <!-- <div class="filters">
+        <select id="location">
+          <option value="">All Locations</option>
+          <option value="Kathmandu">Kathmandu</option>
+          <option value="Bhaktapur">Bhaktapur</option>
+          <option value="Lalitpur">Lalitpur</option>
+        </select>
+        <input type="number" id="minPrice" placeholder="Min Price">
+        <input type="number" id="maxPrice" placeholder="Max Price">
+        <button onclick="filterListings()">Apply Filters</button>
+      </div> -->
+      <div class="listings-grid">
+        <div class="listing" data-location="Kathmandu" data-price="15000">
+          <img src="room3.webp" alt="Room 1">
+          <h4>Cozy Room</h4>
+          <!-- <p>Rs 15,000/month</p> -->
+          <a href="#contact">For more details</a>
+        </div>
+        <div class="listing" data-location="Bhaktapur" data-price="25000">
+          <img src="room1.webp" alt="Room 2">
+          <h4>Apartment</h4>
+          <!-- <p>Rs 25,000/month</p> -->
+          <a href="#contact">For more details</a>
+        </div>
+        <div class="listing" data-location="Lalitpur" data-price="10000">
+          <img src="room2.webp" alt="Room 3">
+          <h4>House</h4>
+          <!-- <p>Rs 10,000/month</p> -->
+          <a href="#contact">For more details</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        Welcome to <strong>KTM Rentals</strong>, your trusted partner in finding the perfect Rentals properties in
+        <strong>Kathmandu Valley</strong>, Nepal.
+        Whether you're looking for a <strong>cozy room</strong>, an <strong>apartment</strong>, or an <strong>entire
+          house</strong>, we’ve got you covered.
+      </p>
+      <p>
+        Our mission is to make the rental process simple, transparent, and stress-free. With a wide range of listings
+        and user-friendly tools,
+        we help you find a place that feels like home.
+      </p>
+      <h3>Why Choose Us?</h3>
+      <ul>
+        <li>Extensive Listings: From Kathmandu to Bhaktapur to Lalitpur, we cover all major areas in Kathmandu Valley.
+        </li>
+        <li>Verified Properties: Every place is carefully vetted for authenticity.</li>
+        <li>24/7 Support: Our team is always here to assist you.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions or need assistance? We’re here to help! Reach out to us via the form below, or contact us
+        directly using the details provided.
+      </p>
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Gatthaghar, Nepal</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <p>+977 9763223104</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p><a href="">ktmrental54@gmail.com</a></p>
+        </div>
+      </div>
+    
+
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <div class="input-group">
+          <input type="hidden" name="access_key" value="be9fd585-73a6-4a29-becd-ba634acf9814">
+
+
+
+          <label for="name" class="labelwalla">Your Name</label>
+          <input type="text" name="Customer Name" class="inputwalla" placeholder="Enter your name" required>
+
+          <label for="phone" class="labelwalla2">Phone Number</label>
+          <input type="tel" class="inputwalla2" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+          <label for="email">Email <span style="color: #555;">(optional)</span></label>
+          <input type="email" name="Email" class="inputwalla2" placeholder="Enter your email" >  
+          <label for="location">Desired Location</label>
+          <input type="text" id="location" name="location" placeholder="Your suitable location" required>
+          <label for="persons" class="arko">Number of Rooms</label>
+          <input type="number" id="rooms" name="room" placeholder="No. of rooms/apartments" required>
+
+          <label for="minprice" ><b>Your Price Range</b></label>
+          <!-- <label for="minprice" class="">Minimum Price</label> -->
+          <input type="number" id="price" name="price" placeholder="Minimum Price" required>
+          <!-- <label for="maxprice" class="">Maximum Price</label> -->
+          <input type="number" id="price" name="price" placeholder="Maximum Price" required>
+          <label for="message" class="arko">Message</label>
+          <textarea id="message" name="message" placeholder="Your short description about the desired rooms/apartments."
+            required></textarea>
+        </div>
+
+
+        <button type="submit">Confirm</button>
+      </form>
+
+  </section>
+
+  <!-- Location Section -->
+  <section id="find-us" class="location">
+    <div class="container">
+      <h2>Or <br>Find Us on Google Maps</h2>
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.417938196459!2d85.37304517433816!3d27.67347477620198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bc25adc4b91%3A0xfa3388fc4e8ebd03!2sGadgets%20Mart%20Bhaktapur!5e0!3m2!1sen!2snp!4v1737209219513!5m2!1sen!2snp"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 <a href="#home" style="text-decoration: none; color: white;"><b>KTM Rentals</b></a>. All
+        rights
+        reserved.</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
